@@ -1,0 +1,201 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+.section-title {
+    background: #666;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 200px;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article h2, .article h4 {
+    color: #333;
+}
+
+.article p {
+    color: #666;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.form-item {
+    margin-bottom: 10px;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-item .form-field {
+    margin-bottom: 10px;
+}
+
+.form-item input[type="text"], .form-item textarea, .form-item select, .form-item input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-item button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-item button:hover {
+    background: #555;
+}
+
+.akcijski_img, .horror_img, .komedija_img, .animirani_img, .science_fiction_img, .film_img {
+    text-align: center;
+}
+
+.akcijski_img img, .horror_img img, .komedija_img img, .animirani_img img, .science_fiction_img img, .film_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.media_body {
+    padding: 10px;
+}
+
+.media_body .title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.media_body .title a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .article {
+        padding: 10px;
+    }
+
+    .form-item input[type="text"], .form-item textarea, .form-item select, .form-item input[type="file"] {
+        padding: 5px;
+    }
+
+    .form-item button {
+        padding: 5px 10px;
+    }
+}
